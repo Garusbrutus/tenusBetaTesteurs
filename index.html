@@ -5,14 +5,9 @@ Secondary: #EA580C (Clay Orange)
 Accent: #14B8A6 (Teal)
 Background: #F8FAFC (Slate Light)
 
-Plan:
-1. Header: Welcome & Mission.
-2. Installation: Flowcards for iOS & Android with direct CTA buttons.
-3. The "Empty City" Effect: Managing expectations.
-4. Feedback Mechanisms: Direct WhatsApp link and TestFlight instructions.
-5. Golden Rules: Visual list of test commitments.
-
-Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
+Modifications effectuées :
+1. Remplacement de "ta ville" par "l'application" dans la section 2 (Note de contexte).
+2. Maintien de toutes les autres sections et de l'année 2026.
 -->
 <!DOCTYPE html>
 <html lang="fr">
@@ -44,6 +39,16 @@ Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
             transform: scale(1.02);
             filter: brightness(1.1);
         }
+        .iphone-only-tag {
+            background-color: #1D4ED8;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 800;
+        }
     </style>
 </head>
 <body class="antialiased pb-16">
@@ -65,7 +70,7 @@ Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
                 <h2 class="text-2xl font-bold text-[#1D4ED8] mb-4 flex items-center">
                     <span class="text-3xl mr-3">🚀</span> Protocole d'Installation
                 </h2>
-                <p class="text-gray-600 mb-8 text-sm md:text-base">Choisis ton camp pour installer la version bêta en quelques clics.</p>
+                <p class="text-gray-600 mb-8 text-sm md:text-base italic">La première étape de notre collaboration commence ici. Selon votre appareil, suivez le flux ci-dessous pour installer la version bêta de Ten'us. Le processus est conçu pour être rapide et sécurisé.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     
@@ -113,77 +118,69 @@ Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
 
         <!-- SECTION 2: NOTE CONTEXTE -->
         <section class="mb-10">
-            <div class="bg-[#EA580C] rounded-2xl shadow-lg p-8 text-white relative overflow-hidden">
+            <div class="bg-[#EA580C] rounded-2xl shadow-lg p-8 text-white relative overflow-hidden border-b-4 border-orange-700">
                 <div class="absolute right-0 top-0 text-9xl opacity-20 transform translate-x-8 -translate-y-8">🏗️</div>
                 <div class="relative z-10">
                     <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <span class="text-3xl mr-3">💡</span> Une communauté en construction
+                        <span class="text-4xl mr-3">💡</span> Une communauté en construction
                     </h2>
-                    <p class="text-lg mb-3 font-semibold">On est pour l'instant uniquement entre nous (membres du TC Sancéen).</p>
+                    <p class="text-lg mb-3 font-semibold">Comme nous sommes en phase de test, la communauté est encore restreinte (TC Sancéen).</p>
                     <p class="text-white/90 leading-relaxed text-sm md:text-base">
-                        L'important n'est pas de trouver un match réel tout de suite, mais de tester l'outil. N'hésite pas à créer des matchs fictifs ou à répondre à des annonces pour vérifier que tout fonctionne bien techniquement !
+                        Il est normal que l'application te semble "vide" pour le moment et que tu ne trouves pas de vrais matchs. L'essentiel ici est de tester l'outil : n'hésite pas à créer des matchs fictifs ou à explorer toutes les fonctionnalités pour vérifier que tout fonctionne techniquement !
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: ENGAGEMENT (TEXTE SEUL) -->
+        <!-- SECTION 3: FEEDBACK CHANNELS -->
         <section class="mb-10">
-            <div class="bg-white rounded-2xl shadow-lg p-8 border-l-8 border-[#14B8A6]">
-                <h2 class="text-xl font-bold text-slate-800 mb-2">⚡ Ton engagement de testeur</h2>
-                <p class="text-gray-600 text-sm md:text-base">
-                    Pour m'aider efficacement, essaie d'ouvrir l'application au moins <span class="font-bold text-[#14B8A6]">2 à 3 fois par semaine</span>. Inutile d'y passer des heures, quelques minutes suffisent pour vérifier la stabilité de l'app.
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION 4: FEEDBACK CHANNELS -->
-        <section class="mb-10">
-            <div class="bg-slate-800 rounded-2xl shadow-lg p-8 text-white text-center">
+            <div class="bg-slate-800 rounded-2xl shadow-lg p-8 text-white text-center border-b-4 border-slate-950">
                 <h2 class="text-2xl font-bold mb-6 text-[#14B8A6]">Comment remonter un bug ?</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
                     <!-- WHATSAPP -->
-                    <div class="flex flex-col items-center">
-                        <div class="text-5xl mb-4">💬</div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="text-5xl mb-4 text-white">💬</div>
                         <h3 class="text-xl font-bold text-white mb-2">Le Groupe WhatsApp</h3>
-                        <p class="text-sm text-slate-400 mb-6">C'est le canal principal. Discute, pose des questions ou envoie tes captures d'écran en direct.</p>
+                        <p class="text-xs text-[#14B8A6] font-bold mb-1 tracking-widest">TOUS SMARTPHONES</p>
+                        <p class="text-sm text-slate-300 mb-6">C'est le canal principal. Discute, pose des questions ou envoie tes captures d'écran en direct.</p>
                         <a href="https://chat.whatsapp.com/GJEcBK4jQ8ABLc1VHSxJ8u" class="btn-link bg-[#25D366] text-white">
                             Accéder au WhatsApp
                         </a>
                     </div>
 
                     <!-- TESTFLIGHT -->
-                    <div class="flex flex-col items-center">
-                        <div class="text-5xl mb-4">🐞</div>
+                    <div class="flex flex-col items-center text-center border-2 border-dashed border-slate-600 rounded-2xl p-4 bg-slate-900/50">
+                        <div class="text-5xl mb-4">🍏</div>
+                        <div class="iphone-only-tag mb-2">Exclusif iPhone</div>
                         <h3 class="text-xl font-bold text-white mb-2">Feedback TestFlight</h3>
-                        <p class="text-sm text-slate-400 mb-4">Sur iPhone : Fais une capture d'écran, clique sur la miniature puis sur "Partager le feedback bêta".</p>
-                        <div class="mt-auto px-4 py-2 border border-slate-600 rounded-lg text-xs text-slate-500 italic">
-                            Pratique pour les détails techniques iOS
+                        <p class="text-sm text-slate-300 mb-4">Fais une capture d'écran sur ton iPhone, clique sur la miniature puis sur <span class="text-blue-400 font-bold">"Partager le feedback bêta"</span>.</p>
+                        <div class="mt-auto px-4 py-2 bg-slate-800 rounded-lg text-[10px] text-slate-400 uppercase tracking-widest font-bold border border-slate-700">
+                            Indisponible sur Android
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5: RULES -->
+        <!-- SECTION 4: RULES -->
         <section class="mb-8">
             <h2 class="text-2xl font-bold text-center text-[#1D4ED8] mb-8">Les 3 Règles d'Or</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-xl text-center shadow-md border border-slate-100">
                     <div class="text-4xl mb-3">🤫</div>
-                    <h3 class="font-bold text-slate-800">Discrétion</h3>
-                    <p class="text-xs text-gray-500">Ne partage rien sur les réseaux publics.</p>
+                    <h3 class="font-bold text-slate-800 mb-2">Discrétion</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Garde l'aventure pour toi. Ne partage pas de visuels sur les réseaux publics.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center shadow-md border-b-4 border-[#EA580C]">
                     <div class="text-4xl mb-3">🧐</div>
-                    <h3 class="font-bold text-slate-800">Franchise</h3>
-                    <p class="text-xs text-gray-500">Sois critique, c'est comme ça qu'on progresse.</p>
+                    <h3 class="font-bold text-slate-800 mb-2">Franchise</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Sois critique ! Plus tu trouves de bugs, plus l'app sera solide à la sortie.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl text-center shadow-md border border-slate-100">
+                <div class="bg-white p-6 rounded-xl text-center shadow-md border-b-4 border-[#14B8A6]">
                     <div class="text-4xl mb-3">⚡</div>
-                    <h3 class="font-bold text-slate-800">Disponibilité</h3>
-                    <p class="text-xs text-gray-500">Une petite visite de temps en temps.</p>
+                    <h3 class="font-bold text-slate-800 mb-2">Disponibilité</h3>
+                    <p class="text-xs text-gray-600 font-medium leading-relaxed italic">Ouvre l'app 2 à 3 fois par semaine pour vérifier la stabilité.</p>
                 </div>
             </div>
         </section>
@@ -192,7 +189,7 @@ Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
 
     <footer class="bg-slate-900 text-slate-400 py-8 text-center">
         <p class="text-lg font-bold text-white mb-2">Merci pour ton aide !</p>
-        <p class="text-sm">Ten'us - 2024</p>
+        <p class="text-sm">Ten'us - 2026</p>
     </footer>
 
 </body>
